@@ -1,49 +1,65 @@
-# The challenge
+# Objective
 
-The application is a food / recipe application that will help users
-become better at cooking. Unfortunately the product manager has dumped
-a bunch of specifications on you and done a runner!
+This application provide recipe and lookup feature for chef like you!
 
-Your task is to develop an application that fulfils _some_ or _all_ of the
-specification provided.
+## Setup
 
-## What are we looking for?
+`yarn install && cd masterchef-client && yarn install`
 
-The aim of the task is to give you the opportunity to show **your** skills
-in web development. The specification is deliberately open for that
-reason. If you aren't strong in front-end development or you haven't
-done much server-side development, don't worry... **Play to your strengths!**
+## Run
 
-However, whatever your strengths, we really want to see some tests included
-in your submission.
+`yarn run preprocess && yarn start`
 
-We are also very interested in _non-coding_ aspects and how you approach
-problems, please supply any notes you make, such as showing your working,
-questions you might want to ask and assumptions you may have made. You could
-also use comments in any code you supply to communicate your reasoning as you 
-work.
+## Test
 
-## Technology choices
+`yarn test` for testing the serverside.
+for clientside testing, we will use `yarn test` under `/masterchef-client`
 
-The server-side languages that will be accepted are limited to:-
-* Node.js
-* Java
-* Scala
+**REMARK** After test will remove build files. You will have to RUN again.
 
-You may pick whichever client and/or server side frameworks you feel
-are suited to the task at hand. 
+## Deploy
 
-## Where to start
+First you have to build (server + client) code:
+`yarn build` in the parent directory.
 
-The `features` folder contains the behavioural specifications of the
-application to be built. Start by reading through these feature files,
-they should give you a sense of what is required. Remember, you don't 
-_have_ to satisfy them all!
+Then you can start your server in parent directory:
+`NODE_ENV=production yarn run server`
 
-## Submitting your test
+After that, you need to setup reverse proxy to serve on 80 port from 3001.
 
-Please either:
 
-* Check your source code into a public github repository and email
-the repository location to the contact email provided; OR
-* Create an archive (zip, tar) and send the archive via email.
+## Input Recipe
+
+Put your recipe under folder /data/recipes , each recipe must have a **Unique** recipe name as filename, the format must follow the standard:
+```javascript
+{
+    "cookingTimeInMinutes": 60,
+    "imageUrl": "/images/recipe/${your_png_filename}",
+    "ingredients": [
+        {
+            "name": "Sugar",
+            "quantity": "1 tsp"
+        },
+        {
+            "name":  "chicken",
+            "quantity": 2
+        }
+    ]
+}
+```
+
+## Input Recipe Image
+
+Put image file under `./images/recipe/`
+
+## Project Structure
+
+This project structure is base on the idea from [here](https://www.fullstackreact.com/articles/using-create-react-app-with-a-server/)
+
+In behind, we use create-react-app(webpack + babel + react) for frontend, express for backend.
+
+[**Jest**](https://facebook.github.io/jest/) as the Test runner.
+
+For details, please read **diary.md**
+
+
