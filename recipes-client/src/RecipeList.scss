@@ -1,4 +1,19 @@
 .recipe-list{
+    a:link {
+      color: red;
+    }
+
+    a:visited {
+      color: green;
+    }
+
+    a:hover {
+      color: darkmagenta;
+    }
+
+    a:active {
+      color: blue;
+    }
 
     table {
         max-height: 700px;
