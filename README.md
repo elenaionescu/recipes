@@ -13,7 +13,7 @@ This application provide recipe and lookup feature for chef like you!
 ## Test
 
 `yarn test` for testing the serverside.
-for clientside testing, we will use `yarn test` under `/masterchef-client`
+for clientside testing, we will use `yarn test` under `/recipes-client`
 
 **REMARK** After test will remove build files. You will have to RUN again.
 
