@@ -4,7 +4,7 @@ This application provide recipe and lookup feature for chef like you!
 
 ## Setup
 
-`yarn install && cd masterchef-client && yarn install`
+`yarn install && cd recipes-client && yarn install`
 
 ## Run
 
