@@ -8,7 +8,6 @@ const path = require('path');
 class RecipeListPageGenerator {
 
     constructor() {
-
     }
     /**
      * Remove existing generated files

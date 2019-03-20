@@ -11,6 +11,7 @@ const StatusGenerator = require('./StatusGenerator');
 /**
  * main function
  */
+
 (function () {
     if (require.main === module) {
         let recipeGenerator = new RecipeListPageGenerator();
