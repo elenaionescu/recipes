@@ -9,7 +9,6 @@ import {
 import Recipe from './Recipe';
 import RecipeList from './RecipeList';
 
-
 class App extends Component {
     constructor() {
         super();

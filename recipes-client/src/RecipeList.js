@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './RecipeList.css';
 
-
 const RecipeRow = ({ name, cookingTimeInMinutes, ingredients }) => {
     return (
         <tr>

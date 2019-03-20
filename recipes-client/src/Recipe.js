@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './Recipe.css';
 
-
 /**
  * Helper function for Recipe Component
  * @param {name, quantity}
