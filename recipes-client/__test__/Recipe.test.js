@@ -4,7 +4,6 @@ import Recipe from '../src/Recipe';
 import { mount } from 'enzyme';
 import sinon from 'sinon';
 
-
 it('Should throw when renders without React Router', () => {
     const div = document.createElement('div');
     expect(() => ReactDOM.render(<Recipe />, div))
