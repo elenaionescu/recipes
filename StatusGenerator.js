@@ -41,7 +41,6 @@ class StatusGenerator {
             .then(files => files.length);
     }
 
-
     /**
      * Write status to File
      * @param {Number} numberOfPages
