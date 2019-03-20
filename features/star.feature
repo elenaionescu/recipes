@@ -42,3 +42,5 @@ Feature: Star
       | Beef Stroganoff |
     When he filters by starred recipes
     Then the recipe "Beef Stroganoff" is displayed
+
+    

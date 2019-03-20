@@ -47,3 +47,5 @@ Feature: Recipe list
 
     When there are more than 10 recipes in the system
     Then page navigation elements are displayed
+
+

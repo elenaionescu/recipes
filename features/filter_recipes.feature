@@ -35,3 +35,5 @@ Feature: Filter recipes
     When the maximum cooking time "25 minutes" is selected
     Then only the following recipe is displayed:
       | Chicken Caesar Salad |
+
+
